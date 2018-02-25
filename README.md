@@ -1,6 +1,13 @@
 yEnc-Python3
 ============
 
+As the original is unmaintained, I forked it and fixed the memory leak
+issue:
+	/src/_yenc.c line 125: free(in) 
+
+
+Original Readme:
+
 Basic yEnc encoder and decoder for python3.
 
 This module does not parse nor generate the required header(s) or trailer.

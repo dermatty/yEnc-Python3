@@ -122,6 +122,7 @@ static PyObject* decode(PyObject* self, PyObject* args)
     /* Create bytes object to return */
     retval = PyBytes_FromStringAndSize(decoded, decoded_length);
     free(decoded);
+    free(in);
     return retval;
 }
 

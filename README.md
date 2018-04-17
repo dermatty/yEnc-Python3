@@ -3,7 +3,7 @@ yEnc-Python3
 
 As the original is unmaintained, I forked it and fixed the memory leak
 issue:
-	/src/_yenc.c line 125: free(in) 
+	/src/_yenc.c line 125: PyBuffer_Release(&data); 
 
 
 Original Readme:
